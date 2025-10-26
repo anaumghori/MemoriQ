@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "MemoriQ",
+    "slug": "MemoriQ",
+    "version": "1.0.0",
+    "scheme": "acme",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "platforms": [
+      "android"
+    ],
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://n"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.memoriq.app",
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "extra": {
+      "router": {
+        "origin": "https://n"
+      },
+      "eas": {
+        "projectId": "1099ac9d-ee86-4b70-ba2a-eaae61f0df7e"
+      }
+    }
+  }
+}
