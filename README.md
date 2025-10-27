@@ -4,8 +4,8 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Architecture](#architecture)
-  - [Feature implementation details](feature-implementation-details)
-  - [Architecture Diagram](architecture-diagram)
+  - [Feature implementation details](#feature-implementation-details)
+  - [Architecture Diagram](#architecture-diagram)
 - [Tech Stack](#tech-stack)
 - [Setup Instructions](#setup-instructions)
 - [Future Improvements](#future-improvements)
@@ -57,6 +57,8 @@ MemoriQ is built on a sophisticated multi-layered architecture that ensures priv
 4. **Model Download & Caching:** On first launch, models are downloaded from Hugging Face repositories and cached locally. Progress is tracked and displayed to the user. On subsequent launches, the app uses the cached models instantly, requiring no internet connection.
 
 5. **App Gate:** Once both the database and all models are ready, the initialization gate opens, revealing the main application interface. If initialization fails or is incomplete, users see a loading screen with progress indicators and helpful messaging about the app's offline capabilities.
+
+The dataset used to finetune RAG model was FreedomIntelligence/RAG-Instruct which can be found [here](https://huggingface.co/datasets/FreedomIntelligence/RAG-Instruct) and the finetuned model can be find [here](https://huggingface.co/anaumghori/MemoriQ-rag-model). A dataset to train Quiz generation model was also created which can be find [here](https://huggingface.co/datasets/anaumghori/memoriq-quiz-dataset-rationales) but the model didn't perform well due to small dataset so it was dropped. 
 
 
 <br></br>
@@ -570,4 +572,7 @@ Beyond these specific improvements, MemoriQ as a proof of concept demonstrates s
 <img width="1200" height="550" alt="chat page" src="https://github.com/user-attachments/assets/87ea6a4a-c5d5-4bb0-81cf-bfacb4ab7d21" />  
 
 ### Notes Page
-<img width="1200" height="550" alt="notes page" src="https://github.com/user-attachments/assets/9d5bbfbb-d91f-4bc9-ab26-28e209163ae7" />
+<img width="1200" height="550" alt="notes page" src="https://github.com/user-attachments/assets/9d5bbfbb-d91f-4bc9-ab26-28e209163ae7" />  
+
+### Recall and Loading Page
+<img width="1200" height="550" alt="canva" src="https://github.com/user-attachments/assets/10bca4a4-3b52-420b-a1aa-aef9bdb7a69b" />
